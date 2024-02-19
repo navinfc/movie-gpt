@@ -1,7 +1,10 @@
 #Netflix Gpt Project
 
 - Create React App
-- Configured Css
+- Configured Tailwind Css
+- Header
+- Login Form
+- Singup form
 
 
 #Features

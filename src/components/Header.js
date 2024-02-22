@@ -4,6 +4,7 @@ import { auth } from '../utils/firebase';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { addUser, removeUser } from '../utils/userSlice';
+import { LOGO } from '../utils/constant';
 
 const Header = () => {
 
@@ -19,7 +20,7 @@ const Header = () => {
   }
 
   useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
+    const unsubcribe = onAuthStateChanged(auth, (user) => {
       if (user) {
         
         const {uid, email, displayName, photoURL} = user;
@@ -30,11 +31,14 @@ const Header = () => {
         navigate("/");
       }
     });
+
+    //Unsubscribe when component unmounts
+    return () => unsubcribe();
   }, []);
 
   return (
     <div className='absolute z-10 w-screen px-8 py-2 bg-gradient-to-b from-black flex justify-between'>
-      <img className='w-40' src="https://static.vecteezy.com/system/resources/previews/019/956/198/original/netflix-transparent-netflix-free-free-png.png" alt="logo" />
+      <img className='w-40' src={LOGO} alt="logo" />
       {
         user && (<div className='flex'>
           <img  className="w-12 h-12 m-auto mx-1" src={user?.photoURL} alt="User Logo"/>

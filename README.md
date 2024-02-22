@@ -17,6 +17,7 @@
 - Fetch data from TMDb api
 - BugFix: Sign up display name 
 - BugFix: If the user is not logged in redirect to login page && vice-versa.
+- Unsubscribed to the onAuthStateChanged callback
 
 
 #Features

@@ -18,6 +18,9 @@
 - BugFix: Sign up display name 
 - BugFix: If the user is not logged in redirect to login page && vice-versa.
 - Unsubscribed to the onAuthStateChanged callback
+- Add harcoded values to the constants file
+- Registered for TMDb api and get the movie list data
+
 
 
 #Features

@@ -20,7 +20,7 @@ const Header = () => {
   }
 
   useEffect(() => {
-    const unsubcribe = onAuthStateChanged(auth, (user) => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
         
         const {uid, email, displayName, photoURL} = user;
@@ -33,7 +33,7 @@ const Header = () => {
     });
 
     //Unsubscribe when component unmounts
-    return () => unsubcribe();
+    return () => unsubscribe();
   }, []);
 
   return (

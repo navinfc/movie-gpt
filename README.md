@@ -20,7 +20,13 @@
 - Unsubscribed to the onAuthStateChanged callback
 - Add harcoded values to the constants file
 - Registered for TMDb api and get the movie list data
-
+- Custom Hook for Now Playing Movies
+- Create movieSlice
+- Update store with movie Data
+- Created maincontainer and secondary container
+- Fetch movie trailer video
+- Update store with trailer video data
+- Implement autoplay and mute functionality
 
 
 #Features

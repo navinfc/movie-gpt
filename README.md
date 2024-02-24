@@ -27,6 +27,7 @@
 - Fetch movie trailer video
 - Update store with trailer video data
 - Implement autoplay and mute functionality
+- Update SecondaryContainer component
 
 
 #Features

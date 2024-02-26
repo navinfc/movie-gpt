@@ -37,8 +37,8 @@ const Header = () => {
   }, []);
 
   return (
-    <div className='absolute z-10 w-screen px-8 py-2 bg-gradient-to-b from-black flex justify-between'>
-      <img className='w-40' src={LOGO} alt="logo" />
+    <div className='absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-between'>
+      <img className='w-44 mx-auto md:mx-0 bg-none' src={LOGO} alt="logo" />
       {
         user && (<div className='flex'>
           <img  className="w-12 h-12 m-auto mx-1" src={user?.photoURL} alt="User Logo"/>

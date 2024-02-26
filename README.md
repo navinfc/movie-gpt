@@ -28,7 +28,10 @@
 - Update store with trailer video data
 - Implement autoplay and mute functionality
 - Update SecondaryContainer component
-
+- Build MovieList and MovieCard
+- TMDB image CDN URL
+- Update the UI
+- usePopularMovie Hook created
 
 #Features
 - Login/Sign Up

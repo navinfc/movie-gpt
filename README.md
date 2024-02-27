@@ -33,6 +33,7 @@
 - Update the UI
 - usePopularMovie Hook created
 - GPT search feature
+- Multilanguage feature in gpt search feature
 
 #Features
 - Login/Sign Up

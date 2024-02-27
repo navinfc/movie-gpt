@@ -6,7 +6,7 @@ const SecondaryContainer = () => {
   const movies = useSelector((store) => store.movies);
 
   const {nowPlayingMovies, popularMovies} = movies;
-  console.log(nowPlayingMovies); 
+  // console.log(nowPlayingMovies); 
 
 
   return (

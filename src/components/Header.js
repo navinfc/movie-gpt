@@ -4,7 +4,7 @@ import { auth } from '../utils/firebase';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { addUser, removeUser } from '../utils/userSlice';
-import { LOGO } from '../utils/constant';
+import { LOGO, SUPPORTED_LANGUAGES } from '../utils/constant';
 import { toggleGptSearchView } from '../utils/gptSlice';
 
 const Header = () => {
@@ -48,6 +48,9 @@ const Header = () => {
       {
         user && (
         <div className='flex p-2'>
+          <select className='h-9 my-auto m-2 bg-cyan-600 text-white'>
+            {SUPPORTED_LANGUAGES.map((lang) => <option key={lang.identifier} value={lang.identifier}>{lang.name}</option>)}
+          </select>
           <button className='m-2 px-4 bg-cyan-600 text-white h-10 my-auto rounded-lg' onClick={handleGptSearchClick}>GPT Search</button>
           <img  className="w-12 h-12 m-auto mx-1" src={user?.photoURL} alt="User Logo"/>
           <button className='text-2xl font-bold text-red-500' onClick={handleSignOut}>Sign Out</button>

@@ -61,7 +61,7 @@ const Header = () => {
         <div className="flex p-2">
           {showLanguageOption && (
             <select
-              className="h-9 my-auto m-2 bg-cyan-600 text-white"
+              className="h-9 my-auto m-2 bg-cyan-600 text-white rounded-lg"
               onChange={handleLanguageChange}
             >
               {SUPPORTED_LANGUAGES.map((lang) => (

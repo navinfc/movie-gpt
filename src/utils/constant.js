@@ -18,10 +18,3 @@ export const SUPPORTED_LANGUAGES = [{identifier: 'en', name: 'English'}, {identi
 
 export const OPENAPI_KEY = process.env.REACT_APP_OPENAI_KEY;
 
-// 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
-
-// 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
-
-// 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
-
-// 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
